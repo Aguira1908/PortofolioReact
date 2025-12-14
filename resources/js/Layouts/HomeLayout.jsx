@@ -49,9 +49,11 @@ const HomeLayout = ({ children }) => {
         className="absolute w-full h-full pointer-events-none  "
       >
         <Particles
-          ease={60}
+          ease={20}
           staticity={70}
           quantity={1000}
+          color="#01C38E"
+          size={0.5}
           className=" inset-0 w-full  h-full"
         />
       </div>
