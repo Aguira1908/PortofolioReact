@@ -19,7 +19,7 @@ const HomeLayout = ({ children }) => {
     if (!particlesRef.current) return;
 
     const setupParallax = () => {
-      const parallaxIntensity = 0.5;
+      const parallaxIntensity = 1;
 
       gsap.to(particlesRef.current, {
         yPercent: 50 * parallaxIntensity,
@@ -28,7 +28,7 @@ const HomeLayout = ({ children }) => {
           trigger: document.body,
           start: 'top top',
           end: 'bottom bottom',
-          scrub: 0.7,
+          scrub: 0,
           invalidateOnRefresh: true,
         },
       });
