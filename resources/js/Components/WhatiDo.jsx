@@ -108,10 +108,10 @@ const WhatiDo = () => {
 
   return (
     <section className="h-full  relative w-full flex items-center justify-center">
-      <div ref={containerRef} className="h-full w-[100px]  ">
+      <div ref={containerRef} className="h-fit xl:h-full w-[100px]  ">
         <div
           ref={sectionRef}
-          className="container-card py-[20%]  flex gap-8  items-center justify-start"
+          className="container-card xl:py-[20%]  flex gap-8  items-center justify-start"
         >
           {WhatiDoData.map((item, i) => {
             return (

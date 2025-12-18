@@ -28,6 +28,7 @@ const LenisProvider = ({ children }) => {
       smoothTouch: false,
       touchMultiplier: 2,
       infinite: false,
+      refresh: true,
     });
 
     lenisRef.current = lenis;
