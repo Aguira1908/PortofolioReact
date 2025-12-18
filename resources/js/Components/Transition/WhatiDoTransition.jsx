@@ -1,4 +1,4 @@
-import gsap from 'gsap';
+import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import React, { useEffect, useLayoutEffect, useRef } from 'react';
 
@@ -44,19 +44,21 @@ const WhatiDoTransition = () => {
   return (
     <section
       ref={sectionRef}
-      className="w-full mt-[10%] h-scren min-h-screen text-white text-xl xl:text-6xl md:text-3xl font-bold  "
+      className="w-full pointer-events-none mt-[10%] h-scren min-h-screen text-white text-xl xl:text-6xl md:text-3xl font-bold  "
     >
       <div
         ref={containerRef}
         className="h-screen w-full leading-loose tracking-wide flex flex-col items-start justify-between p-4 lg:p-12"
       >
-        <div className="w-full h-full text-8xl font-extrabold ">
-          <h1>THIS IS WHAT I DO.</h1>
+        <div className="w-full h-full  text-5xl md:text-7xl xl:text-8xl font-extrabold ">
           <h1>
+            THIS IS WHAT I <span className=" text-[#01C38E] ">DO</span>.
+          </h1>
+          <h1 className="mt-4">
             BUT WHAT I <span className=" text-[#01C38E] ">BUILD</span>
           </h1>
         </div>
-        <div className="w-full h-full flex items-end justify-end text-7xl">
+        <div className="w-full h-full flex items-end justify-end font-extrabold  text-right  text-4xl md:text-6xl xl:text-7xl">
           <h1>
             THAT’S A <span className="text-[#01C38E]">DIFFERENT</span> STORY.
           </h1>

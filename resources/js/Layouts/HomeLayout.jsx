@@ -4,7 +4,7 @@ import Particles from '@/components/ui/shadcn-io/particles/';
 
 import Lenis from 'lenis';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import gsap from 'gsap';
+import { gsap } from 'gsap';
 
 // Register ScrollTrigger
 if (typeof window !== 'undefined') {
@@ -43,7 +43,7 @@ const HomeLayout = ({ children }) => {
   }, []);
 
   return (
-    <div className="w-full relative min-h-screen antialiased bg-[#191E29] overflow-hidden     ">
+    <div className="w-full relative min-h-screen antialiased bg-[#121720] overflow-hidden     ">
       <div
         ref={particlesRef}
         className="absolute w-full h-full pointer-events-none  "
@@ -58,7 +58,7 @@ const HomeLayout = ({ children }) => {
         />
       </div>
 
-      <div className="relative z-10" ref={contentRef}>
+      <div className="relative z-20" ref={contentRef}>
         <LenisProvider>{children}</LenisProvider>
       </div>
     </div>

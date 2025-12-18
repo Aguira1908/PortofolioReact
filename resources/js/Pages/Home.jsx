@@ -9,6 +9,7 @@ import WhatiDoTesting from '../Components/WhatiDoTesting';
 import WhatiDoTransition from '../Components/Transition/WhatiDoTransition';
 import Spacer from '../Components/Transition/Spacer';
 import LatestProject from '../Components/LatestProject';
+import Footer from '../Components/Footer';
 
 const Home = () => {
   return (
@@ -22,6 +23,7 @@ const Home = () => {
       {/* <Spacer /> */}
       <WhatiDoTransition />
       <LatestProject />
+      <Footer />
     </HomeLayout>
   );
 };
