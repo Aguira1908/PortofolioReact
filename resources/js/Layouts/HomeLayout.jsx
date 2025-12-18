@@ -43,7 +43,7 @@ const HomeLayout = ({ children }) => {
   }, []);
 
   return (
-    <div className="w-full relative min-h-screen antialiased bg-[#191E29] overflow-hidden  ">
+    <div className="w-full relative min-h-screen antialiased bg-[#191E29] overflow-hidden     ">
       <div
         ref={particlesRef}
         className="absolute w-full h-full pointer-events-none  "
