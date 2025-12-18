@@ -1,5 +1,5 @@
 import React from 'react';
-import { Instagram, Github, Linkedin } from 'lucide-react';
+import { Instagram, Github, Linkedin } from '../Components/UI/SvgProvider';
 
 const HeroSection = () => {
   return (
@@ -24,19 +24,25 @@ const HeroSection = () => {
           </div>
 
           <div className="w-full  flex justify-between">
-            <div className="xl:w-12 xl:h-12  p-1 bg-gra-800 ">
+            <div className="xl:w-12 xl:h-12 w-10  p-1 bg-gra-800 ">
               <a href="https://www.instagram.com/zikkriamri/">
-                <Instagram className="w-full h-full transition-all duration-400 text-[#696E79] hover:text-gray-400  " />
+                <div className="w-full h-full transition-all duration-400 text-[#696E79] hover:text-gray-400  ">
+                  <Instagram />
+                </div>
               </a>
             </div>
-            <div className="xl:w-12 xl:h-12  p-1 bg-gra-800 ">
+            <div className="xl:w-12 xl:h-12 w-10  p-1 bg-gra-800 ">
               <a href="#">
-                <Github className="w-full h-full transition-all duration-400 text-[#696E79] hover:text-gray-400  " />
+                <div className="w-full h-full transition-all duration-400 text-[#696E79] hover:text-gray-400  ">
+                  <Github />
+                </div>
               </a>
             </div>
-            <div className="xl:w-12 xl:h-12  p-1 bg-gra-800 ">
+            <div className="xl:w-12 xl:h-12 w-10  p-1 bg-gra-800 ">
               <a href="#">
-                <Linkedin className="w-full h-full transition-all duration-400 text-[#696E79] hover:text-gray-400  " />
+                <div className="w-full h-full transition-all duration-400 text-[#696E79] hover:text-gray-400  ">
+                  <Linkedin />
+                </div>
               </a>
             </div>
           </div>

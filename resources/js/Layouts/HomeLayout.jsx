@@ -4,7 +4,7 @@ import Particles from '@/components/ui/shadcn-io/particles/';
 
 import Lenis from 'lenis';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import gsap from 'gsap';
+import { gsap } from 'gsap';
 
 // Register ScrollTrigger
 if (typeof window !== 'undefined') {
